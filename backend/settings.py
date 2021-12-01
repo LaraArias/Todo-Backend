@@ -72,14 +72,10 @@ REST_FRAMEWORK = {
 # Database
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'dd33mu4eeer55n',
-        'USER': 'zgblgjfcxlacvy',
-        'PASSWORD': 'f664e3ac34208408e988d5f2d8331900cf0c8efe12f0263f0c1faea3933bb822',
-        'HOST': 'ec2-3-230-219-251.compute-1.amazonaws.com',
-        'PORT': '5432',
-    }
+     'default': {
+         'ENGINE': 'django.db.backends.sqlite3',
+         'NAME': BASE_DIR / 'db.sqlite3',
+     }
 }
 
 # Password validation
